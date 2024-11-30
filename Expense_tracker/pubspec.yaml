@@ -1,0 +1,57 @@
+name: expenses_tracker
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  font_awesome_flutter: ^10.6.0
+  fl_chart: ^0.66.0
+  intl: ^0.19.0
+  flutter_colorpicker: ^1.1.0
+  uuid: ^4.3.3
+
+  firebase_core: ^3.8.0
+
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.7
+
+  expense_repository:
+    path: packages/expense_repository
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - asset_icon/beauty.png
+    - asset_icon/electricity.png
+    - asset_icon/fuel.png
+    - asset_icon/investment.png
+    - asset_icon/medicine.png
+    - asset_icon/school.png
+    - asset_icon/travel.png
+
+
+# Consider adding assets (images, fonts) in a separate section:
+# assets:
+#   - images/my_image.png
+#   - fonts/my_font.ttf
+
+# Fonts can be organized with family and font descriptors:
+# fonts:
+#   - family: MyFont
+#     fonts:
+#       - asset: fonts/MyFont-Regular.ttf
+#       - asset: fonts/MyFont-Bold.ttf
+#         weight: 700
